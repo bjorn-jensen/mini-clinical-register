@@ -19,6 +19,11 @@ The schema enforces:
 - Basic data validation checks
 - Indexes are applied to support efficient joins and aggregation queries.
 
+## Data Model (ER Diagram)
+
+![ER Diagram](docs/er_diagram.png)
+
+
 ## Analytical Focus
 The project includes SQL-based analyses covering:
 - 30-day readmission rate
