@@ -38,14 +38,15 @@ Formally:
 For each admission of a given patient:
 
 - Let `PrevDischarge` be the previous discharge date.
-- If the difference between `admit_date` and `PrevDischarge` is less than or equal to 30 days,
-  the admission is classified as a readmission.
+- If the difference between admit_date and PrevDischarge is greater than 0 and less than or equal to 30 days, the admission is classified as a readmission.
 
 The 30-day readmission rate is computed as:
 
+Readmission Rate =
 (Number of readmissions within 30 days)
 ------------------------------------------------
-(Total number of admissions)
+(Total number of eligible admissions)
+
 
 
 ## Technical Stack
