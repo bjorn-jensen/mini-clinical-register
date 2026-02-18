@@ -42,10 +42,7 @@ For each admission of a given patient:
 
 The 30-day readmission rate is computed as:
 
-Readmission Rate =
-(Number of readmissions within 30 days)
-------------------------------------------------
-(Total number of eligible admissions)
+Readmission Rate = (Number of readmissions within 30 days)/(Total number of eligible admissions)
 
 
 
