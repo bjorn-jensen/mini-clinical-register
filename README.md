@@ -27,6 +27,27 @@ The project includes SQL-based analyses covering:
 - Diagnosis-level breakdown of readmissions
 - Window functions (LAG), aggregation logic, and CASE-based stratification are used to define and compute KPIs.
 
+## KPI Definition
+
+### 30-Day Readmission Rate
+
+A 30-day readmission is defined as any admission occurring within 30 days of a previous discharge for the same patient.
+
+Formally:
+
+For each admission of a given patient:
+
+- Let `PrevDischarge` be the previous discharge date.
+- If the difference between `admit_date` and `PrevDischarge` is less than or equal to 30 days,
+  the admission is classified as a readmission.
+
+The 30-day readmission rate is computed as:
+
+(Number of readmissions within 30 days)
+------------------------------------------------
+(Total number of admissions)
+
+
 ## Technical Stack
 - Python (synthetic data generation)
 - PostgreSQL (relational database)
